@@ -20,12 +20,12 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        pageTitle: 'We will be right back',
-        body: 'Site is under maintanance'
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         pageTitle: 'We will be right back',
+//         body: 'Site is under maintanance'
+//     });
+// });
 
 app.use(express.static(__dirname + '/public'));
 
